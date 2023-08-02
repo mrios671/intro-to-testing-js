@@ -75,17 +75,17 @@ This entire TDD workflow is often explained as the repetition of "Red, Green, Re
 1. Clone this repo to your projects folder following the "Getting Started" directions. Take a moment to orient yourself with the test runner, the existing tests, and the implementation inside of `code.js`.
 
 1. Once you're setup and comfortable, go to `code.js` and change the name of the `helloWorld` function to `hello`. Then refresh `report.html` in your browser.
-    - What do you notice about the test results?
+    - What do you notice about the test results? //they all turned false
     - What are some ways you think we could get the tests to turn green again?
     - Set the function name in `code.js` back to `helloWorld` and re-run the tests.
     
 1. Inside of the `helloWorld` function in `code.js`, replace `return "Hello, World!"` with `return "Hello"`.
     - Run the tests by refreshing `report.html` in your browser.
-    - Which tests fail? Which tests are still green?
+    - Which tests fail? Which tests are still green? // only he test that wanted the specific string returned false.
     - Set the implementation back to `return "Hello, World!"`
 
 1. Inside of the `helloWorld` function in `code.js`, change the line `return "Hello, World!"` to `console.log("Hello, World!")`. Then refresh `report.html`.
-    - What happens to the tests? Identify which tests stay green and which ones turn red. 
+    - What happens to the tests? Identify which tests stay green and which ones turn red. // the tests that asked for returns were false, the test only processed that it was a defined function
     - Why do you think that is?
     - Consider, what is the return value of a `console.log`? *hint*, it's always the same
     - Consider, what is the return value of a `return`?
