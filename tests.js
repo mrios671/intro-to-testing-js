@@ -44,3 +44,19 @@ describe( 'sayHello', function (){
     });
 });
 
+
+describe('isFalse', function() {
+    it('should be a defined function', function () {
+        expect(typeof isFalse).toBe('function');
+    });
+    it('should return a boolean when passed any value', () => {
+        expect(typeof isFalse()).toBe('boolean')
+    })
+    it('should return true when passed 5', () => {
+        expect(isFalse(5)).toBe(true)
+    })
+    it('should return true when passed a string', function() {
+        expect(isFalse("string")).toBe(true)
+    })
+});
+

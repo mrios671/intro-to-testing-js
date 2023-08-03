@@ -12,3 +12,11 @@ function sayHello(input) {
         return "Hello, Jane!";
       }
 }
+
+function isFalse(number) {
+    if (number === 5 || number === "string"){
+       return true;
+   } else {
+       return false;
+   }
+}
