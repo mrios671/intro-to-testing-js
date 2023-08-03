@@ -28,3 +28,11 @@ function isEven(number) {
        return false;
    }
 }
+
+function isVowel(vowel) {
+    if (vowel === "a" || vowel === "A") {
+        return true;
+    } else {
+        return false;
+    }
+}
